@@ -22,7 +22,7 @@ pipeline{
 
         stage('Deploy'){
             steps{
-                sh 'docker run -d -p 9000:80 --name myapp container-app'
+                sh 'docker run -d -p 9000:80 --name container-app myapp'
             }
         }
     }
